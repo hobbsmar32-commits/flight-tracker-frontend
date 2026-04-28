@@ -84,7 +84,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 let planes = {};
 
 async function updateRadar() {
-  const res = await fetch("https://YOUR-RENDER-URL.onrender.com/api/live");
+  const res = await fetch("https://flight-tracker-backend-2l64.onrender.com");
   const data = await res.json();
 
   data.states.forEach(p => {
